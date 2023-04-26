@@ -1,0 +1,193 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+:root {
+  --main-color:#e84242;
+  --black-color:#0e0e0e;
+  --border:0.1rem solid rgba(255,255,255,0.4);
+}
+*{
+    font-family:'Poppins', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform:capitalize ;
+transition: 0.2s ease;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-color)
+}
+
+section {
+    padding: 3.5rem  7% ;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #0e0e0e;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.heading {
+    color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+border-bottom:0.1rem solid #fff ;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: #0e0e0e;
+}
+
+/*!  header star */
+
+.logo img{
+    height: 7rem;
+   background: transparent;
+}
+
+header{
+    background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 7%;
+position: s;
+margin: 2rem 7%;
+border-radius: 30rem;
+box-shadow:  0px 0px
+ 17px -2px rgb(0,0,0,0.75) ;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    border-bottom: 0.1rem solid  transparent ;
+}
+
+logo img{
+    height: 7rem;
+ 
+    }
+    
+.header .navbar .active, 
+    .header .navbar a:hover{
+    border-color:var(--main-color);
+    padding-bottom: 0.2rem;
+
+}
+
+.header .buttons button{
+cursor: pointer;
+font-size: 2rem;
+margin-left: 2rem;
+background-color: transparent;
+}
+
+/*!  header end */
+
+.home{
+    min-height: 100vh;
+    background: url(./images/home.jpg)
+    no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin-top: -14.5rem;
+   display: flex;
+   align-items: center;
+}
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 5rem ;
+    color: #fff;
+
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1 rem o;
+    color: #ccc;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu .box-container .box .menu-category {
+    font-size: 1.2rem;
+text-transform:uppercase;
+}
+
+.menu .box-container .box h3 {
+    font-size: 2.5rem;
+padding: 1rem 0;
+}
+
+
+.menu .box-container .box .price {
+    font-size:  2.5rem; 
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
